@@ -1,0 +1,109 @@
+.grid {
+    background-color: #191919;
+    color:white;
+    display: grid;
+    grid-template-rows:200px 200px 389px 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "picture intro intro intro"
+    "picture more more social_media"
+    "picture hobby hobby hobby"
+    "picture work work work"
+    ;
+  }
+
+.h1, h2, h3 {
+    font-family: 'Nunito', sans-serif;
+}
+
+.p, li {
+    font-family: 'Noticia Text', serif;
+}
+
+.picture {
+ grid-area: picture;
+ background: #002366;
+}
+
+.intro {
+ grid-area: intro;
+}
+.social_media {
+ grid-area: social_media;
+}
+.more {
+ grid-area: more;
+}
+.hobby {
+ grid-area: hobby;
+ background-image: url("../images/sneakers.png");
+ border-radius: 8px;
+ text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ position: relative;
+}
+
+#sneakers {
+    font-size: 48px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Nunito', sans-serif;
+}
+
+.work {
+ grid-area: work;
+}
+
+.align {
+    margin: 25px;
+}
+
+#me{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+#about_me{
+    text-align: left;
+    font-family: 'Noticia Text', serif;
+}
+
+.social{
+    display: inline-block;
+}
+
+.social_pic{
+    width: 75px;
+    height: 75px;
+}
+
+.space {
+    margin-right: 25px;
+}
+
+.flexItem {
+    background-color: #002366;
+    margin: 10px;
+    padding: 10px;
+    width: 350px;
+    height: 300px;
+  }
+  .flexContainer {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+.justifyContent {
+  justify-content: space-evenly;
+}
+
+.work_pic{
+    height: 65%;
+}
